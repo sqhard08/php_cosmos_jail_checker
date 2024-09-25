@@ -1,4 +1,4 @@
-2<?php
+3<?php
 
 // Подключение файла конфигурации
 require_once 'config.php';
