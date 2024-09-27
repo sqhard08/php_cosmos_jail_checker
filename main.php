@@ -136,7 +136,7 @@ if ($current_status !== $previous_status) {
             // Если нет валидаторов в тюрьме, но есть закрепленное сообщение, открепляем его
             unpin_all_telegram_messages($telegram_bot_token, $chat_id);
             unlink($pinned_message_file);
-            echo "All validators are out of jail. Unpinned the message.";
+            echo "Все валидаторы вышли из тюрьмы. Сообщение откреплено.";
         } else {
             echo "Ни один из валидаторов не находится в тюрьме.";
         }
