@@ -1,23 +1,24 @@
 # PHP_cosmos_jail_checker
 
-PHP_cosmos_jail_checker is a script designed to monitor validators for a node on the Cosmos network. It checks if any validators are jailed and sends the relevant information to a specified Telegram chat. This tool is essential for keeping track of your Cosmos validators' status and ensuring they are operating smoothly.
+PHP_cosmos_jail_checker is a script designed for monitoring validators on a node in the Cosmos network. It checks if any validators are jailed and sends relevant information to a specified Telegram chat. This tool is essential for tracking the status of Cosmos validators and ensuring their proper operation.
 
 ## Features
 
 - **Jail Status Check**: Automatically checks if any validators are currently jailed.
 - **Telegram Notifications**: Sends validator status updates to a specified Telegram chat.
-- **Logging**: Logs all activities and actions taken by the script for easy monitoring.
+- **Pinned Message Update**: If the status of validators changes, the pinned message in the chat is updated.
+- **Logging**: Maintains a log of all actions for easy monitoring.
 
 ## Installation
 
 1. **Clone the Repository**:
 
-    ```sh
-    git clone https://github.com/your-username/php_cosmos_jail_checker.git
+    ```bash
+    git clone https://github.com/sqhard08/php_cosmos_jail_checker.git
     cd php_cosmos_jail_checker
     ```
 
-2. **Create Configuration File**:
+2. **Create a Configuration File**:
 
     Create a file named `config.php` and add your Telegram bot token and chat ID:
 
@@ -27,3 +28,10 @@ PHP_cosmos_jail_checker is a script designed to monitor validators for a node on
     $chat_id = "your-telegram-chat-id";
     ?>
     ```
+
+## Usage
+
+Run the script to check the status of validators:
+
+```bash
+php your_script.php
